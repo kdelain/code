@@ -99,12 +99,12 @@ function checkEmail(userEmail)
 
 // CHECK INPUT LENGTH BETWEEN MIN AND MAX LENGTH
 // can be used for things like user id or passwords
-function checkLength(inp,id_min,id_max)
+function checkLength(inp,inp_min,inp_max)
 {
-  var uid_len = inp.value.length;
-  if (uid_len == 0 || uid_len >= id_min || uid_len < id_max)
+  var inp_len = inp.value.length;
+  if (inp_len == 0 || inp_len >= inp_min || inp_len < inp_max)
   {
-    alert("Input length must be between "+id_min+" and "+id_max);
+    alert("Input length must be between "+inp_min+" and "+inp_max);
     inp.focus();
     return false;
   }
